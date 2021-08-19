@@ -20,28 +20,28 @@
 -------------
 好像txt里帮助写得太长了，这里再写个图文版的。虽然应该没人看吧。
 ## 3.1 第一步：浏览器的选择
-    目前仅支持Chrome, Firefox和Microsoft Edge三种浏览器。
+  目前仅支持Chrome, Firefox和Microsoft Edge三种浏览器。
 ## 3.2 第二步：配置webdriver
-    先查找使用浏览器的版本，可百度。
-    
-    WebDriver下载地址：
-    Chrome：https://npm.taobao.org/mirrors/chromedriver/（找对应版本文件夹，点进去下chromedriver_win32.zip）
-    Firefox：https://github.com/mozilla/geckodriver/releases/（不用看版本，下win32或win64，一般x64）
-    Edge: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/（看了版本再下，一般x64）
-    
-    下载好后解压，在C盘新建文件夹"webDriver"，把exe文件放进去，右键exe属性，把其**位置**复制下来；
-    ![C盘下的驱动文件夹](https://i.loli.net/2021/08/19/auO8W2ExS51hpFY.png)
-    ![复制文件夹地址](https://i.loli.net/2021/08/19/DTWG4kop1zwxhnm.png)
-    右击`此电脑`，点击`属性`，选择右侧`高级系统设置`，在弹出菜单的右下角选择`环境变量`，
-    选中下方**系统变量**中的`Path`，点击`编辑`，选择右侧`新建`，将刚复制的地址粘贴进去，一路点`确定`就好了。
-    到这里就基本配置完成了，每次打开程序就能进行打卡。如果想设置自动打卡，请看下一步。
+  先查找使用浏览器的版本，可百度。
+
+  WebDriver下载地址：
+  Chrome：https://npm.taobao.org/mirrors/chromedriver/（找对应版本文件夹，点进去下chromedriver_win32.zip）
+  Firefox：https://github.com/mozilla/geckodriver/releases/（不用看版本，下win32或win64，一般x64）
+  Edge: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/（看了版本再下，一般x64）
+
+  下载好后解压，在C盘新建文件夹"webDriver"，把exe文件放进去，右键exe属性，把其**位置**复制下来；
+  ![C盘下的驱动文件夹](https://i.loli.net/2021/08/19/auO8W2ExS51hpFY.png)
+  ![复制文件夹地址](https://i.loli.net/2021/08/19/DTWG4kop1zwxhnm.png)
+  右击`此电脑`，点击`属性`，选择右侧`高级系统设置`，在弹出菜单的右下角选择`环境变量`，
+  选中下方**系统变量**中的`Path`，点击`编辑`，选择右侧`新建`，将刚复制的地址粘贴进去，一路点`确定`就好了。
+  到这里就基本配置完成了，每次打开程序就能进行打卡。如果想设置自动打卡，请看下一步。
 ## 3.3 第三步：配置自动打卡
-    不推荐频繁开关电脑或不关电脑的用户设置开机启动。本程序的启动项名称为'ISP_Auto_Check'，不需要时，可在启动项管理中禁止本程序开机启动。
-    当然，如果觉得太麻烦，放在桌面上，每天手点也是可以的。
-    介绍另一种自动打卡方式，即手动创建Windows计划任务。
-    首先还是右击`此电脑`，选择`管理`，点击左侧`任务计划程序`，选择右侧`创建基本任务`，跟着设置向导走就行了。
-    ![任务计划程序界面](https://i.loli.net/2021/08/19/7SaBtJ5cZu164mr.png)
-    选择启动程序路径时，除了选好主程序路径，记得在`参数`中加上lsp.txt。
-    ![添加参数](https://i.loli.net/2021/08/19/Ff4HbRpirY9WOzJ.png)
-    ![创建好的计划任务](https://i.loli.net/2021/08/19/BfdIpEq75vK9eng.png)
-    可选择电脑开启且不在使用的时间。
+  不推荐频繁开关电脑或不关电脑的用户设置开机启动。本程序的启动项名称为'ISP_Auto_Check'，不需要时，可在启动项管理中禁止本程序开机启动。
+  当然，如果觉得太麻烦，放在桌面上，每天手点也是可以的。
+  介绍另一种自动打卡方式，即手动创建Windows计划任务。
+  首先还是右击`此电脑`，选择`管理`，点击左侧`任务计划程序`，选择右侧`创建基本任务`，跟着设置向导走就行了。
+  ![任务计划程序界面](https://i.loli.net/2021/08/19/7SaBtJ5cZu164mr.png)
+  选择启动程序路径时，除了选好主程序路径，记得在`参数`中加上lsp.txt。
+  ![添加参数](https://i.loli.net/2021/08/19/Ff4HbRpirY9WOzJ.png)
+  ![创建好的计划任务](https://i.loli.net/2021/08/19/BfdIpEq75vK9eng.png)
+  可选择电脑开启且不在使用的时间。
